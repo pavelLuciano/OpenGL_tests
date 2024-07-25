@@ -57,7 +57,7 @@ unsigned int Shader::compileShader(unsigned int type, const std::string& source)
 		glGetShaderInfoLog(shader, 512, NULL, infoLog);
 		std::cout << "ERROR::SHADER::COMPILATION_FAILED\n" << infoLog << std::endl;
 	}
-	else std::cout << "ERROR::SHADER::COMPILATION_SUCCESS\n" << std::endl;
+	else std::cout << "SHADER::COMPILATION_SUCCESS\n" << std::endl;
 	return shader;
 }
 
@@ -77,7 +77,7 @@ void Shader::compileProgram()
 		glGetProgramInfoLog(this->ID, 512, NULL, infoLog);
 		std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
 	}
-	else std::cout << "ERROR::SHADER::PROGRAM::LINKING_SUCCESS\n";
+	else std::cout << "SHADER::PROGRAM::LINKING_SUCCESS\n";
 	glDeleteShader(shader1);
 	glDeleteShader(shader2);
 

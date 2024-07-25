@@ -34,12 +34,9 @@ int main()
     if (glewInit() != GLEW_OK) return -1;
     std::cout << "OpenGL iniciado correctamente\nVersion: " << glGetString(GL_VERSION) << "\n";
 
+    Shader shader("res/shaders/Basic.shader");
+    shader.compileProgram();
+
     //while loop
-    while (!glfwWindowShouldClose(window))
-    {
 
-
-
-
-    }
 }

@@ -36,7 +36,6 @@ public:
 		const std::vector<unsigned int>& indices,
 		const std::vector<Texture>& textures
 	);
-
 	void Draw(Shader& shader);
 };
 
